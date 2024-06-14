@@ -54,17 +54,17 @@ app.get("/getallstudent", async (req,res)=>{
 
 // update student 
 
-app.put("/updateuser/:id", async (req,res)=>{
-   try {
-    let id = req.params.id
-    const updateUser = await mymodel.findByIdAndUpdate(id,req.body,{new:true})
-    res.status(201).json({message:`kindly update student with ${id} given`, updateUser})
+// app.put("/updateuser/:id", async (req,res)=>{
+//    try {
+//     let id = req.params.id
+//     const updateUser = await mymodel.findByIdAndUpdate(id,req.body,{new:true})
+//     res.status(201).json({message:`kindly update student with ${id} given`, updateUser})
     
-   } catch (error) {
-    res.status(500).json(error.message)
+//    } catch (error) {
+//     res.status(500).json(error.message)
     
-   } 
-})
+//    } 
+// })
 
 //delete a student
     
