@@ -68,18 +68,18 @@ app.get("/getallstudent", async (req,res)=>{
 
 //delete a student
     
-app.delete("/deletestudent/:deleteID", async (req,res)=>{
-    try {
-        let deleteID = req.params.deleteID
-        const deletestudent = await mymodel.findByIdAndDelete(deleteID,req.body)
-        res.status(200).json({message:`kindly find by ${deleteID} and delete asap`, deletestudent})
+// app.delete("/deletestudent/:deleteID", async (req,res)=>{
+//     try {
+//         let deleteID = req.params.deleteID
+//         const deletestudent = await mymodel.findByIdAndDelete(deleteID,req.body)
+//         res.status(200).json({message:`kindly find by ${deleteID} and delete asap`, deletestudent})
  
         
-    } catch (error) {
-        res.status(500).json(error.message)
+//     } catch (error) {
+//         res.status(500).json(error.message)
         
-    } 
-})  
+//     } 
+// })  
 
 
 app.get("/", (req,res)=>{
