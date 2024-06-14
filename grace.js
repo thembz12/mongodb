@@ -64,7 +64,7 @@ app.get("/getallstudent", async (req,res)=>{
 //     res.status(500).json(error.message)
     
 //    } 
-// })
+// }) 
 
 //delete a student
     
