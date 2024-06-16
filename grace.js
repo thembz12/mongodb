@@ -52,7 +52,7 @@ app.get("/getallstudent", async (req,res)=>{
     }
 })
 
-update student 
+//update student 
 
 app.put("/updateuser/:id", async (req,res)=>{
    try {
